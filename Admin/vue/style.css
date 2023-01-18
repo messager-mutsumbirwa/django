@@ -1,0 +1,183 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+	text-decoration: none;
+}   
+input[type="submit"]{
+	cursor: pointer;
+}
+body{
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0; 
+	line-height: 1.3; 
+	background: #000;
+	color: white;
+	outline: none;
+	min-width: 1370px;
+}
+a{
+	color: inherit;
+}
+.topbar img{
+	position: absolute;
+	height: 50px;
+	margin: 20px;
+}
+.form-mag-titre{
+	max-width: 800px;
+	margin: auto;
+	font-size: 25px;
+	padding: 10px 30px;
+	border-bottom: 1px solid rgb(230,230,230);
+	text-align: center;
+}
+.topbar-gest-mag{
+	width: 65%;
+	float: left;
+	margin: 10px;
+}
+.sidebar-gest-mag{
+	width: 30%;
+	float: right;
+	margin: 10px;
+}
+.titre-topabar-gest-mag, .titre-sidebar-gest-mag{
+	font-size: 20px;
+	padding: 10px 20px;
+	text-align: center;
+	border-bottom: 1px solid rgb(230,230,230);
+	margin-bottom: 10px;
+}
+.sidebar-gest-mag input, .sidebar-gest-mag select{
+	width: 100%;
+	height: 30px;
+	background: red;
+	margin: 10px 0;
+	border: 0;
+	border-radius: 5px;
+	background: grey;
+	padding: 0 10px;
+	color: white;
+}
+.sidebar-gest-mag textarea{
+	background: grey;
+	border-radius: 5px;
+	margin: 10px 0;
+	color: white;
+}
+.sidebar-gest-mag input[type='file']{
+	padding-top: 5px;
+}
+.sidebar-gest-mag input[type='submit']{
+	background: rgb(255,167,43);
+	font-weight: bold;
+}
+.sidebar-gest-mag input[type='reset']{
+	background: #223f5a;
+}
+.gest-mag-tablebd, .gest-mag-tablebd-titre{
+	border: 1px solid grey;
+	border-right: 0;
+}
+.gest-mag-tablebd-titre{
+	border-bottom: 1px solid white;
+}
+.tablebd-id, .tablebd-cat, .tablebd-nom, .tablebd-prix, .tablebd-img, .tablebd-datefin, .tablebd-action, .action-supprimer, .action-modifier, .tablebd-bt-action{
+	width: 15%;
+	padding: 10px;
+	vertical-align: top;
+	border-right: 1px solid grey;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	height: 50px;
+}
+.tablebd-id{
+	width: 5%;
+}
+.tablebd-prix{
+	width: 7%;
+}
+.tablebd-action, .tablebd-bt-action{
+	width: 25.3%;
+	display: inline-block;
+	text-align: center;
+}
+.action-supprimer, .action-modifier{
+	width: 47%;
+	display: inline-block;
+	border: 0;
+}
+.tablebd-action{
+	line-height: 10px;
+}
+
+.bt-action-supprimer input, .bt-action-modifier input{
+	width: 80px;
+	height: 30px;
+	background: red;
+	border-radius: 5px;
+	outline: none;
+	border: 0;
+	color: white;
+
+}
+.tablebd-bt-action{
+	padding: 0;
+}
+.action-supprimer{
+	border-right: 1px solid grey;
+}
+.bt-action-modifier input{
+	background: #223f5a;
+}
+.action-supprimer, .action-modifier{
+	padding: 4px;
+}
+
+.ajout-mag input[type='number']{
+	width: 100px;
+}
+.ajout-mag input[type='radio']{
+	width: initial;
+	height: initial;
+}
+.topbar-gest-achat{
+	width: 100%;
+}
+.table-title-Achat-date,.table-title-Achat-client,.table-title-Achat-tel,.table-title-Achat-add,.table-title-Achat-achat,.table-title-Achat-quant,.table-title-Achat-punit,.table-title-Achat-ptot,.table-title-Achat-fsseur,.table-title-Achat-img,.table-title-Achat-livr{
+	width: 9%;
+	padding: 10px;
+	vertical-align: top;
+	border-right: 1px solid grey;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	height: 50px;
+}
+.tableAchat-date,.tableAchat-client,.tableAchat-tel,.tableAchat-add,.tableAchat-achat,.tableAchat-quant,.tableAchat-punit,.tableAchat-ptot,.tableAchat-fsseur,.tableAchat-img,.tableAchat-livr{
+	width: 9%;
+	padding: 10px;
+	vertical-align: top;
+	border-right: 1px solid grey;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	min-height: 60px;
+}
+.table-title-Achat-livr, .tableAchat-livr{
+	width: 5%;
+}
+.bt-action-livr{
+	background: yellow;
+	border: 0;
+	padding: 0px 10px;
+	padding: 0;
+	width: 40px;
+}
+.tableAchat-achat a{
+	height: 10%;
+	width: 10%;
+}
+.tableAchat-achat a img{
+	height: auto;
+	width: 100%;
+}

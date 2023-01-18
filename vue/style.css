@@ -1,0 +1,2213 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+	text-decoration: none;
+}   
+input[type='submit']{
+	cursor: pointer;
+}
+input[type='image']:hover{
+	filter: brightnss(80%);
+	transition: 1s;
+}
+body{
+	background: rgb(230,230,230);
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	color: rgba(0,0,0,0.6);
+	margin: 0; 
+	line-height: 1.3;
+}
+
+a{
+	color: inherit;
+}
+
+.topbar{
+	background: #1a2937;
+	color: #fff;
+}
+
+.topbar a{
+	text-decoration: none;
+}
+
+.topbar-logo{
+	display: block;
+	text-align: left;
+	font-size: 24px;
+	padding: 11px 50px;
+	background: url('../img/django.png') no-repeat;
+	background-size: 50px;
+	height: 50px;
+	width: 50px;
+	background-position: 50px 10px;
+}
+
+.topbar-logo img{
+	width: 50px;
+}
+
+.menu_img{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	margin: 15px 20px;
+	cursor: pointer;
+}
+
+.panier-topbar{
+	width: 10%;
+	position: absolute;
+	right: .5%;
+	top: .5%;
+	text-align: center;
+}
+
+.panier-topbar img{
+	width: 50%;
+}
+
+.sidebar{
+	display: none;
+	width: 70%;
+}
+.menu:hover .sidebar{
+	display: block;
+	position: absolute;
+	background: none;
+	cursor: pointer; 
+	background: white;
+	color: rgba(0,0,0,0.6);
+}
+.menu:hover .sidebar{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.menu:hover .sidebar a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	padding: 0.6em 0;
+	transition: .3s;
+	border: solid 1px transparent;
+	padding-left: 10px;
+}
+
+.menu:hover .sidebar a:hover,
+.menu:hover .sidebar a.active{
+	color: #000;
+	background: #FFF;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.menu:hover .sidebar a::before{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	opacity: .67;
+	transition: opacity .3s;
+	margin-top: -2px;
+	margin-right: 20px;
+	vertical-align: middle;
+	background: url('../img/home.png') center center / contain;
+}
+
+.topbar-nav{
+	text-align: center;
+	padding-bottom: 16px;
+	line-height: 2;
+}
+
+.searchbar{
+	height: 38px;
+	border: 0;
+	padding: 0px 10px;
+	margin-right: -4px;
+	width: calc(90% - 50px);
+	border-radius: 5px 0px 0px 5px;
+}
+
+.sidebar2{
+	display: none;
+}
+
+.searchclic{
+	height: 38px;
+	width: 50px;
+	background: no-repeat center center / 40% url('../img/searchclic.png') rgb(255,167,43);
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 4px;
+}
+
+.navigation{
+	text-align: center;
+	padding: 10px 0px 15px 0px;
+	display: flex;
+	overflow-x: auto;
+}
+.navigation a{
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.container{
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.site{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.main-adresse{
+	height: 48px;
+	/*background: linear-gradient(to right, #1a2937, rgb(255,167,43) 50%,  #1a2937);*/
+	color: white;
+	background: #2c3e50;
+	line-height: 45px;
+	padding-left: 10px;
+}
+
+.main-return{
+	height: 48px;
+	border-bottom: 1px solid rgb(230,230,230);
+	background: white;
+	line-height: 45px;
+	padding-left: 10px;
+	color: #000;
+	font-weight: bold;
+}
+.main-return a::before{
+ 	content: url('../img/arrowleft.png') ;
+	vertical-align: middle;
+	height: 10px;
+	width: 5px;
+	line-height: 50px;
+	margin-right: 5px;
+}
+
+.card-bodytopbar{
+	height: 165px;
+	background: no-repeat center center / cover url('../img/tech_topbar.jpg');
+}
+
+.card-ident{
+	background: white;
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 10px 10px;
+}
+
+.card-ident a{
+	color: #817ce7;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.card-ident a:hover{
+	text-decoration: underline;
+}
+
+.btIdentif{
+	text-align: center;
+	background: rgb(255,167,43);
+	padding: 20px 0;
+	margin-top: 10px;
+}
+
+a .btIdentif{
+	color: rgba(0,0,0,0.6);
+}
+
+.container-item input{
+	width: 100%;
+}
+
+.container-item, .container-magexpl{
+	background: white;
+	margin: 5px 0px;
+	padding: 5px 10px;
+}
+
+.container-magexpl{
+	border-bottom: 1px solid rgb(230,230,230);
+}
+
+.container-magexpl1{
+	width: calc(50% - 2px);
+	display: inline-block;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.container-magexpl1:hover{
+	transform: scale(0.9);
+}
+
+.item-title, .magexpl-title{
+	font-size: 25px;
+	padding: 15px 0; 
+}
+
+.container-item img{
+	width: 100%;
+	height: auto;
+}
+
+.container-magexpl img{
+	width: 100%;
+	height: auto;
+}
+
+.seemore{
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+.seemore input{
+	color: #817ce7;
+	background: white;
+	border: 0;
+	cursor: pointer;
+}
+
+.seemore::after{
+	content: ' '; 
+	float: right;
+ 	background: no-repeat center center / cover url('../img/arrowmore.png');
+ 	height: 10px;
+ 	width: 10px;
+ 	position: absolute;
+ 	margin-top: 5px;
+}
+
+ footer{
+ 	background: #1a2937;
+ 	color: white;
+ }
+
+.footer{
+	background: #1a2937;
+}
+
+.bthaut{
+	background: #2c3e50;
+	height: 50px;
+	padding: 5px 0px 15px 0;
+	text-align: center;
+}
+
+.bthaut a{
+	color: white;
+	text-decoration: none!important;
+}
+
+.bthaut img{
+	height: 10px;
+	width: 25px;
+}
+
+.coperate{
+	text-align: center;
+	clear: both;
+	background: #14202b;
+	padding: 20px;
+}
+
+
+footer{
+		clear: both;
+}
+footer a{
+	text-decoration: none;
+	color: #817ce7;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+.footer-gauche{
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+
+.footer-droite{
+	padding: 10px;
+	width: 50%;
+	float: right;
+}
+
+/*Concernant la page occasion.php*/
+.Occasions-container{
+	padding: 10px 0px;
+	background: white;
+}
+
+.occas-top{
+	color: #000;	
+	margin: 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(220,220,220);
+	background: white;
+}
+
+.occas-top-title{
+	font-size: 25px;
+}
+
+.occas-item{
+	margin-top: 10px;
+	width: calc(50% - 30px);
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.occas-item-comment{
+	padding-bottom: 10px;
+	color: #000;
+}
+.occas-item-img{
+	width: 100%;
+	height: auto;
+}
+.occas-item-price{
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/*Concernant la page magasin*/
+.mag-topbar{
+	padding: 5px 10px;
+	font-size: 16px;
+	color: rgba(0,0,0,0.8);
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.mag-topbar-title{
+	color: rgb(255,167,43);
+	font-size: 35px;
+	padding: 5px 0;
+}
+
+.mag-sidebar-title{
+	text-align: center;
+	font-weight: bold;
+	color: rgb(255,167,43);
+	padding-bottom: 5px;
+}
+
+.mag-topbar-comment{
+	font-weight: normal;
+	color: #000;
+}
+
+.mag-sidebar-item-defils{
+	height: 200px;
+	overflow-x: auto;
+	display: flex;
+}
+
+.mag-sidebar-item-defils input[type='image']{
+	flex-wrap: wrap;
+	margin-right: 5px;
+	height: 160px;
+}
+
+.mag-items{
+	padding-top: 20px;
+}
+
+.mag-item{
+	padding: 10px 10px;
+	border-bottom: 1px solid rgb(230,230,230);
+}
+
+.mag-item-img{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.mag-item-img input[type="image"]{
+	width: 100%;
+	height: auto;
+}
+
+.mag-item-text{
+	width: 55%;
+	display: inline-block;
+	height: 0;
+	flex-wrap: wrap;
+	font-size: 16px;
+	font-family: Arial;
+	margin-left: 10px;
+}
+
+.mag-item-comment, .mag-vendeur, .mag-item-title, .mag-item-price{
+	width: 100%;
+}
+
+.mag-item-comment{	
+	color: rgba(0,0,0,.9);
+}
+
+.mag-item-title{
+	color: rgba(0,0,0,.8);
+}
+
+.mag-item-title input{
+	word-wrap: break-word;
+	white-space: normal;
+	text-align: left;
+	font-family: inherit;
+	border: 0;
+	background: 0;
+	padding: 0;
+	font-size: inherit;
+	color: #817ce7;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.mag-item-price{
+	color: #000;
+}
+
+.body-mag{
+	background: white;
+}
+
+/*Concernant la page offres.php*/
+.body-offre{
+	background: white;
+}
+.day-offre-top{
+	padding: 10px 10px;
+	color: #000;
+	border-bottom: 1px solid rgb(230,230,230);
+	background: white;
+}
+
+.day-offre-title{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.day-offre-img{
+	padding: 10px 0;
+	width: 100%;
+	height: auto;
+}
+
+.day-offre-prix{
+	font-weight: bold;
+}
+
+.offre-container{
+	padding: 10px 10px;
+}
+
+.offre-title{
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.offre-item{
+	width: calc(50% - 2px);
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.offre-item-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.offre-item-img{
+	width: 95%;
+}
+
+/*Concernant la page about.php*/
+.body-about{
+	background: white;
+	color: #000;
+	font-size: 16px;
+	padding: 20px;
+	clear: both;
+}
+
+.body-about h2{
+	font-weight: normal;
+}
+.about-topbar{
+	display: none;
+}
+/*Concernant la page comptecreation.php*/
+.body-comptecreation{
+	padding: 0 20px;
+	color: rgba(0,0,0,0.8);
+	background: white;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.body-comptecreation h2{
+	text-align: center;
+	color: rgb(255,167,43);
+	margin: 0;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+/*.titlecompteC{
+	font-size: 25px;
+	line-height: 40px;
+	color: #000;
+	text-align: center;
+}*/
+
+.body-comptecreation input{
+	border: 1px solid grey;
+	padding: 0 10px;
+	height: 25px;
+	outline: none;
+	height: 35px;
+}
+
+.body-comptecreation h3{
+	color: rgb(255,167,43);
+	text-align: center;
+	padding-top: 20px;
+}
+
+.input-sexe{
+	padding-top: 20px;
+	margin: auto;
+}
+
+/*.input-identifiants input, .input-identites input{
+	width: 100%;
+}
+
+.input-identifiants{
+	padding-top: 20px;
+}
+
+.input-creation{
+	position: absolute;
+	right: 7%;
+}
+
+.input-creation input{
+	background: rgb(255,167,43);
+	width: 100%;
+	border: 1px solid rgb(255,167,43);
+	cursor: pointer;
+}*/
+/*Concernant le fichier de la page identification.php*/
+.body-identification{
+	background: white;
+	padding: 5px 20px;
+}
+
+.body-identification h2{
+	color: #000;
+}
+
+.body-identification a{
+	color : #817ce7;
+}
+
+.body-identification input{
+	height: 40px;
+	width: 90%;
+	margin: 10px 5%;
+	padding: 0 10px;
+	border: 1px solid grey;
+}
+
+.submit-identification input{
+	background: rgb(255,167,43);
+
+}
+
+.aside-identification{
+	margin: 0px 5%;
+}
+
+/*Concernant la page useconditions.php, aide.php*/
+.body-useconditions, .body-aide{
+	background: white;
+	color: #000;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+.body-maglist, .body-useconditions{
+	clear: both;
+}
+
+.body-useconditions h2, .body-aide h2, .body-maglist h2{
+	font-weight: normal;
+	color: rgb(255,167,43);
+	margin: 0;
+}
+
+/*Concernant la page maglist.php*/
+.body-maglist{
+	background: white;
+	padding: 10px 20px;
+	color: #000;
+}
+
+.body-maglist h2{
+	color: #000;
+	font-weight: bold;
+}
+
+.maglist-container{
+	padding: 20px 20px;
+}
+
+.price-maglist{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.maglist-item{
+	display: inline-block;
+	width: calc(50% - 2px);
+	margin-top: 30px;
+}
+.maglist-item input{
+	color: #817ce7;
+	text-decoration: underline;
+	border: 0;
+	background: inherit;
+	padding: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+/*Concernant un seul produit*/
+.produit-container{
+	background: white;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+.produit-infos{
+	color: #000;
+	font-weight: bold;
+}
+
+.produit-infos a{
+	color: #817ce7;
+	font-weight: normal;
+}
+
+.produit-imgprincipal{
+	margin-top: 5px;
+}
+
+.produit-imgprincipal img, .produit-imgprincipal input[type="image"]{
+	width: 100%;
+}
+
+.produit-commentaire{
+	color: rgba(0,0,0,.8);
+}
+
+.produit-prix{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.btcommander{
+	text-align: center;
+	background: rgb(255,167,43);
+	padding: 5px 20px;
+	margin-top: 10px;
+	clear: both;
+	margin: auto;
+	color: white;
+	cursor: pointer;
+}
+
+.btcommander input{
+	background: 0;
+	border: 0;
+	font-size: inherit;color: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.sidebar-produit{
+	background: white;
+	margin-top: 2px;
+	padding: 0 20px;
+}
+
+.sidebar-produit h2{
+	padding-top: 5px;
+	margin-top: 0;
+}
+.produit-img img{
+	width: 100%;
+}
+
+/*Concernant la page listemagsins.php*/
+.topbar-magsin{
+	height: 165px;
+	background: no-repeat center / cover url('../img/poulet.jpg') ;
+	color: white;
+	text-align: center;
+	padding: 50px 5px;
+	font-size: 20px;
+}
+.body-listemagsins{
+	padding: 10px 20px;
+}
+.item-magsin{
+	background: white;
+	display: inline-block;
+	width: calc(50% - 2px);
+	height: auto;
+	padding: 10px;
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 10px;
+}
+.magsin-name{
+	border-bottom: 4px solid rgb(255,167,43);
+	text-align: center;
+	width: 100%;
+	color: #000;
+	font-weight: bold;
+}
+.magsin-commentaire{
+	line-height: 20px;
+}
+.magsin-img{
+	width: 100%;
+}
+.magsin-img img{
+	width: 10%;
+}
+.btexplore-magsin{
+	text-align: center;
+	color: blue;
+}
+
+/*Concernant la page commandform.php*/
+.topbar-cform, .sidebar-cform{
+	background: white;
+	margin: 10px 20px;
+	font-size: 20px;
+	padding: 10px 50px;
+	text-align: center;
+	border: 1px solid rgb(230,230,230);
+}
+
+.topbar-cform{
+	background: rgb(255,167,43,.4);
+}
+
+.topbar-cform span:nth-child(1){
+	font-weight: bold;
+}
+
+.sidebar-cform{
+	padding: 0 50px;
+	text-align: left;
+}
+
+.sidebar-cform input, .sidebar-cform select{
+	padding: 5px 20px;
+	outline: none;
+	margin-top: 10px;
+	border: 1px dotted #000;
+}
+
+.article-name, .article-prix, .command-quantité, .moyen-paiement, .adresse-livraison, .temps-livraison, .article-commander{
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+}
+
+ .article-commander{
+ 	padding-top: 0;
+ 	text-align: center;
+ }
+
+ .article-commander input{
+	background: rgb(255,167,43);
+	cursor: pointer;
+	color: white;
+	border: 0;
+}
+
+.article-name input, .article-prix input{
+	text-align: left;
+	border: 0;
+	font-size: 16px;
+	font-weight: bold;
+	width: 80%;
+	padding-left: 5px;
+	cursor: default;
+	font-variant: small-caps;
+}
+.article-prix input{
+	width: auto;
+	max-width: 100px;
+}
+
+
+/*Concernant la page biens.php*/
+.body-biens{
+	background: white;
+	padding: 10px 20px;
+}
+
+.biens-img{
+	width: 35%;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.biens-img img{
+	width: 100%;
+	height: auto;
+}
+
+.biens-infos{
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+.biens-name{
+	font-weight: bold;
+	color: #000;
+	font-size: 16px;
+}
+
+.mot-prix-biens{
+	color: red;
+}
+
+.biens-categorie, .biens-commander{
+	margin: 20px 0;
+	background: white;
+	border: 1px solid grey;
+	color: #000;
+	padding: 10px 5px;
+
+}
+.biens-commander{
+	background: rgb(255,167,43);
+	text-align: center;
+}
+
+.commentaire-biens{
+	color: #000;
+	padding-top: 20px;
+}
+
+/*Concermnant la page moncompte.php*/
+.body-moncompte{
+	background: white;
+
+}
+
+.body-moncompte h2{
+	margin: 0;
+	color: #000;
+	font-weight: normal;
+	padding: 10px;
+	color: rgb(255,167,43);
+}
+
+.topbar-moncompte{
+	padding-left: 5%;
+	color: #000;
+	font-weight: bold;
+}
+
+.topbar-moncompte input, .topbar-moncompte select{
+	width: 95%;
+	padding: 5px 5px;
+	border: 1px solid grey;
+	margin: 5px 0;
+}
+
+.modification-submit input[type='reset']{
+	background: #1a2937;
+	color: white;
+}
+.modification-submit input[type='submit']{
+	background: rgb(255,167,43);
+	color: white;
+}
+
+.modification-identifiants, .modification-infosgen, .modification-emplacement, .modification-submit{
+	padding-bottom: 10px;
+}
+.getpage{
+	clear: both;
+	padding: 10px;
+}
+.getpage a{
+	color: #817ce7;
+}
+.getpage a:hover{
+	text-decoration: underline;
+}
+.sidebar-comptecreat{
+	max-width: 950px;
+	margin: auto;
+	padding: 20px;
+}
+.sidebar-comptecreat a{
+	color: #817ce7;
+}
+
+/*Concernant la page search.php*/
+.topbar-search{
+	background: white;
+	border-bottom: 1px solid rgb(230,230,230);
+	clear: both;
+	padding: 10px;
+}
+.search-container{
+	background: white;
+}
+.search-container{
+	background: white;
+	padding: 10px;
+}
+.searchresult{
+	padding: 10px 5px;
+	border-bottom: 1px solid rgb(230,230,230);
+	clear: both;
+}
+.searchresult-img{
+	width: 40%;
+	display: inline-block;
+}
+.searchresult-item{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+/*Concernant la page contacts.php*/
+.body-contacts{
+	background: white;
+	clear: both;
+}
+
+.body-contacts h2{
+	color: rgb(255,167,43);
+	font-weight: normal;
+	font-size: 25px;
+	padding: 30px 50px;
+	margin: 0;
+}
+
+.contact-one{
+	height: 80px;
+	margin: 5px 0;
+	border-bottom: 1px solid rgb(230,230,230);
+	max-width: 950px;
+	margin: auto;
+	padding: 10px;
+}
+
+.icone-contact{
+	width: 20%;
+	display: inline-block;
+}
+
+.contact-one img{
+	height: 30px;
+	margin-top: 15px;
+}
+.sidebar-contact{
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 22px;
+	padding-left: 20px;
+}
+
+/*Concernant la page saveClient.php*/
+.topbar-saveClient{
+	width: 80%;
+	height: 200px;
+	border-radius: 0px 0% 100% 0px;
+	padding: 20px;
+	background: white;
+	font-weight: bold;
+	color: #000;
+	background: url('../img/django.png') bottom no-repeat white;
+	/*filter: brightness(80%);*/
+	clear: both;
+}
+
+.topbar-saveClient a{
+	padding: 5px 20px;
+	background: rgb(255,167,43);
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+/*Concernant la page panier.php*/
+.body-panier{
+	background: white;
+}
+
+.topbar-panier h2{
+	margin: 0;
+}
+
+.topbar-panier, .sidebar-panier{
+	padding: 10px;
+	vertical-align: top;
+}
+
+.sidebar-panier{
+	border-top: 1px solid #000;
+}
+
+.pannier-titres{
+	width: 100%;
+	font-weight: bold;
+}
+
+.panier-titre-article, .panier-titre-supprimer, .panier-titre-quantite, .panier-titre-prixtot{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+.panier-titre-prixtot{
+	width: 35%;
+}
+
+.panier-titre-quantite{
+	width: 25%;
+}
+
+.panier-titre-supprimer{
+	width: 15%;
+	display: none;
+}
+
+.panier-titre-name, .panier-item-name{
+	display: none;
+}
+
+.panier-item{
+ 	width: 100%;
+ 	border-top: 1px solid grey;
+ 	margin-top: 10px;
+}
+
+.panier-item input{
+	max-width: 95%;
+	margin: auto;
+}
+
+.panier-item-img{
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	padding: 5px;
+	border: 1px solid grey;
+	border-top: 0;
+	text-align: center;
+}
+
+.panier-item-quantite, .panier-item-prixtot, .panier-item-supprimer{
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	padding: 5px;
+	font-weight: bold;
+	color: #000;
+	text-align: right;
+}
+
+.panier-item-quantite{
+	width: 25%;
+}
+
+.panier-item-prixtot{
+	width: 35%;
+}
+
+.panier-item-supprimer{
+	width: 15%;
+	text-align: center;
+}
+
+.panier-prixtot{
+	float: right;
+	font-weight: bold;
+	color: #000;
+	font-size: 20px;
+}
+
+.mode-paiement h2, .mode-livraison h2{
+	margin: 0;
+}
+
+.mode-paiement, .mode-livraison{
+	clear: both;
+	padding: 10px 0px;
+}
+
+.mode-paiement select, .mode-livraison select{
+	border: 0;
+	background: white;
+	height: 35px;
+	outline: none;
+	margin-top: 5px;
+}
+
+.panier-commander input{
+	border: 0;
+	background: rgb(255,167,43);
+	padding: 10px 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.panier-commander input:hover{
+	color: white;
+}
+
+.panier-infos{
+	padding: 10px;
+}
+
+.panier-infos h2{
+	margin-bottom: 5px;
+	border-top: 1px solid rgb(230,230,230);
+}
+
+.ajout-panier{
+	margin: 50px 10px;
+	padding: 5px 10px;
+	background: #1a2937;
+	color: white;
+	text-align: center;
+	clear: both;
+	line-height: 50px;
+}
+
+/*Concernant la page achat.php*/
+.body-achat, .body-facture{
+	background: white;
+	padding: 5px;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+.facture{
+	border: 1px solid #000;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.entete-facture{
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+
+.facture-emetteur{
+	font-weight: bold;
+}
+
+.facture-date{
+	float: right;
+}
+
+.facture-num{
+	vertical-align: top;
+	padding-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
+}
+
+.facture-destinataire{
+	padding-top: 10px;
+}
+
+.facture-titre{
+	border-bottom: 1px solid #000;
+}
+
+.quantite_facture, .designation_facture, .prix_unitaire_facture, .prix_total_facture{
+	display: inline-block;
+	font-weight: bold;
+	border-left: 1px solid #000;
+	padding: 2px;
+}
+
+.quantite_facture{
+	width: 10%;
+	border-left: 0;
+}
+
+.facture-item{
+	text-align: right;
+}
+.designation_facture{
+	width: 35%;
+}
+
+.prix_unitaire_facture{
+	width: 20%;
+}
+
+.prix_total_facture{
+	width: 30%;
+}
+
+.total_facture{
+	border-top: 1px solid #000;
+}
+
+.facture_mot_tot, .facture_tot{
+	width: 65%;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.facture_tot{
+	border-left: 1px solid #000;
+	width: 30%;
+	font-size: 16px;
+	color: #000;
+}
+
+.suppression_facture input, .facture-date input{
+	border: 0;
+	outline: 0;
+	cursor: default;
+
+}
+.suppression_facture input{
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.topbar-achat{
+	font-style: italic;
+	padding: 10px;
+	color: #000;
+	font-size: 16px;
+	color: rgb(255,167,43);
+}
+
+.body-facture{
+	min-height: 400px;
+}
+
+/*Concernant la page compteVendeur.php*/
+.body-c_vendeur{
+	background: white;
+	padding: 10px;
+	clear: both;
+}
+
+.body-c_vendeur h2{
+	margin: 10px 5px;
+	color: #000;
+	font-weight: normal;
+}
+
+.sidebar-c_vendeur{
+	padding-top: 20px;
+}
+
+.mag-c_vendeur{
+	min-width: 320px;
+}
+
+.titre-c_vendeur, .article-c_vendeur{
+	padding: 5px;
+	text-align: center;
+	border-bottom: 1px solid rgb(230,230,230);
+}
+
+.titre-c_vendeur{
+	border-bottom: 2px solid #000;
+	background: grey;
+}
+
+.titre-c_vendeur_date, .titre-c_vendeur_img, .titre-c_vendeur_name, .titre-c_vendeur_prix, .titre-c_vendeur_cat, .titre-c_vendeur_supp, .titre-c_vendeur_quant, .titre-c_vendeur_punit, .article-c_vendeur_date, .article-c_vendeur_img, .article-c_vendeur_name, .article-c_vendeur_prix, .article-c_vendeur_cat, .article-c_vendeur_supp, .article-c_vendeur_quant, .article-c_vendeur_punit{
+	display: inline-block;
+	width: 18%;
+	vertical-align: top;
+	word-wrap: break-word;
+	text-align: left;
+	font-weight: bold;
+	color: #000;
+	padding: 5px;
+}
+
+.titre-c_vendeur_img, .article-c_vendeur_img{
+	width: 13%;
+}
+
+.article-c_vendeur_date, .article-c_vendeur_img, .article-c_vendeur_name, .article-c_vendeur_prix, .article-c_vendeur_cat, .article-c_vendeur_supp, .article-c_vendeur_quant, .article-c_vendeur_punit{
+	font-weight: normal;
+}
+
+.article-c_vendeur_name{
+	font-weight: bold;
+}
+
+.article-c_vendeur_img{
+	text-align: center;
+}
+
+.article-c_vendeur_supp, .titre-c_vendeur_supp{
+	width: 8%;
+	text-align: center;
+}
+
+.article-c_vendeur_img img{
+	width: 80%;
+	height: auto;
+}
+
+.article-c_vendeur_supp input[type='image']{
+	width: 50%;
+}
+
+
+.titre-c_vendeur_quant, .article-c_vendeur_quant, .titre-c_vendeur_punit, .article-c_vendeur_punit{
+	width: 13%;
+}
+
+.c-vendeur-gestion{
+	text-align: left;
+}
+
+.c-vendeur-gestion a{
+	color: #817ce7;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 520px){
+	.topbar{
+		color: #fff;
+	}
+
+	.topbar-logo{
+		width: 125px;
+		height: 145px;
+		background: #1a2937;
+		position: absolute;
+		text-align: center;
+		padding: 20px;
+		background: url('../img/django.png') #1a2937 no-repeat;
+		background-size: 80px;
+		background-position: 30px 30px;
+	}
+
+	.topbar-logo img{
+		width: 100px;
+	}
+
+	.panier-topbar{
+	width: 8%;
+	}
+
+	.topbar-nav{
+		float: right;
+		width: calc(100% - 125px);
+		height: 95px;
+		padding: 30px 20px;
+		background: #1a2937;
+	}
+
+	.navigation{
+		width: calc(100% - 125px);
+		height: 50px;
+		background: #1a2937;
+		font-family: Times-new-roman; 
+		padding-top: 5px;
+		clear: both;
+		float: right;
+		padding-left: 5%;
+	}
+
+	.navigation a{
+		font-size: 17px;
+		padding: 7px 10px;
+		color: white;
+		font-family: Calibri (Corps);
+	}
+
+	.searchbar{
+		height: 38px;
+		border: 0;
+		padding: 0px 10px;
+		margin-right: -4px;
+		width: calc(90% - 50px);
+		border-radius: 5px 0px 0px 5px;
+	}
+
+	.searchclic{
+		height: 38px;
+		width: 50px;
+		background: no-repeat center center / 40% url('../img/searchclic.png') rgb(255,167,43);
+		border: none;
+		border-radius: 0px 5px 5px 0px;
+		text-align: center;
+		cursor: pointer;
+		margin-right: 4px;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.topbar a{
+		text-decoration: none;
+	}
+
+	.main{
+		clear: both;
+	}
+	.main-adresse{
+		text-align: right;
+		padding-right: 20px;
+		height: 50px;
+		background: white;
+		border-bottom: 1px solid rgb(230,230,230);
+		color: #000;
+	}
+	.card-bodytopbar{
+		height: 180px;
+		background: no-repeat center center / 100% url('../img/tech_topbar.jpg');
+	}
+	.card-ident{
+		float: left;
+		margin-left: 5%;
+		clear: none;
+		width: 90%;
+	}
+	.site{
+		float: right;
+		background: white;
+		margin: 5px 5%;
+	}
+	.container-magexpl{
+		clear: both;
+		margin: 0 5%;
+	}
+	.container-magexpl1{
+		border-bottom: 1px solid rgb(230,230,230);
+		padding-right: 10px;
+	}
+	.container-item{
+		width: calc(50% - 2px);
+		display: inline-block;
+	}
+	.seemore{
+		border-bottom: 1px solid rgb(230,230,230);
+	}
+
+	/*Concernant la page produit.php*/
+	.body-produit{
+		background: white;
+		padding: 10px 2%;
+		clear: both;
+	}
+
+	.produit-container{
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.sidebar-produit{
+		width: 40%;
+		display: inline-block;
+	}
+
+	.sidebar-produit img{
+		width: calc(50% - 2px);
+		display: inline-block;
+	}
+
+
+	/*Concernant la page occasion.php*/
+	.main-return{
+		height: 50px;
+		padding-left: 20px;
+		float: left;
+		width: 100%;
+	}
+	.occas-top{
+		width: 150px;
+		float: left;
+		border-bottom: 0;
+		padding: 10px 5px;
+		clear: both;
+	}
+	.occas-top-title{
+		font-size: 20px;
+		font-weight: bold;
+		color: rgba(0,0,0);
+		padding-bottom: 10px;
+	}
+	.sidebar-occas{
+		width: calc(100% - 170px);
+		border-left: 1px solid rgb(230,230,230);
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px; 
+	}
+	.occas-item{
+		width: 26%;
+		margin: 20px 3%;
+	}
+
+	/*Concernant la page mag.php*/
+	.mag-topbar{
+		width: 150px;
+		float: left;
+	}
+	.mag-topbar-title{
+		color: rgba(0,0,0,.);
+		font-weight: normal;
+		font-size: 25px;
+	}
+	.mag-topbar-comment{
+		font-weight: normal;
+		color: #000;
+		font-family: Arial;
+	}
+	.mag-sidebar{
+		width: calc(100% - 170px);
+		display: inline-block;
+		border-left: 1px solid rgb(230,230,230);
+	}
+	.mag-sidebar-title{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.mag-item{
+		width: 30%;
+		display: inline-block;
+		margin-left: 5px;
+		margin-top: 20px;
+		border-bottom: 0;
+	}
+	.mag-item-comment{	
+		font-weight: normal;
+	}
+	.mag-sidebar-item-defils, .mag-sidebar-title{
+		display: none;
+	}
+	.mag-item-title{
+		color: rgba(0,0,0,.8);
+	}
+	.mag-item .mag-item-img{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.mag-item-img input[type="image"]{
+		width: 70%;
+		padding-bottom: 10px;
+	}
+	.mag-item-text{
+		width: 100%;
+		height: 100px;
+		margin: 0;
+	}
+
+	/*Concernant la page maglist.php*/
+	.maglist-topbar{
+		width: 150px;
+		float: left;
+		padding-left: 5px;
+	}
+	.maglist-container{
+		display: inline-block;
+		width: calc(100% - 170px);
+		display: inline-block;
+		border-left: 1px solid rgb(230,230,230);
+		padding-left: 20px;
+	}
+	.maglist-item{
+		width: 30%;
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 2%;
+		padding: 5px;
+	}
+	.maglist-item a{
+		color: blue;
+	}
+	.price-maglist{
+		font-weight: bold;
+	}
+
+	/*Concernant la page offres.php*/
+	.day-offre-top{
+		width: 150px;
+		float: left;
+		padding-left: 20px;
+	}
+	.offre-container{
+		display: inline-block;
+		width: calc(100% - 170px);
+		display: inline-block;
+		border-left: 1px solid rgb(230,230,230);
+	}
+	.offre-item{
+		width: 30%;
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 2%;
+		padding: 5px;
+		margin-bottom: 20px;
+	}
+
+	/*Concenant la page about.php*/
+	.about-topbar{
+		float: left;
+		width: 40%;
+		text-align: center;
+		display: block;
+	}
+	.about-topbar img{
+		width: 90%;
+		height: auto;
+	}
+	.sidebar-about{
+		display: inline-block;
+		width: 60%;
+	}
+
+	/*Concernanat la pagfe aide.php*/
+	.body-aide{
+		padding: 20px 50px;
+		clear: both;
+	}
+
+	/*Concernant la page useconditions.php*/
+	.body-useconditions{
+		padding: 20px 50px;
+		clear: both;
+	}
+
+	/*Concermant la page identification.php*/
+	.body-identification{
+		clear: both;
+		padding: 20px;
+	}
+	.identification-container{
+		max-width: 500px;
+		margin: auto;
+	}
+
+	/*Concernant la page comptecreation.php*/
+	.body-comptecreation{
+		padding: 20px 5%;
+		clear: both;
+	}
+	.input-creation{
+		right: 45%;
+	}
+
+	/*Concernant la page biens.php*/
+	.topbar-biens, .sidebar-biens{
+		width: 48%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 20px;
+	}
+	.topbar-biens{
+		padding-right: 0;
+	}
+
+	/*Concernant la page listemagsins.php*/
+	.item-magsin{
+		width: calc(25% - 3px);
+	}
+	.topbar-magsin{
+		height: 180px;
+	}
+
+	/*Concernant la page commandform.php*/
+	.body-commandform{
+		width: 520px;
+		margin-top: 10px;
+		margin: auto;
+		clear: both;
+	}
+	.topbar-cform{
+		margin-top: 20px;
+		clear: both;
+	}
+
+	/*Concernant la page moncompte.php*/
+	.body-moncompte{
+		padding: 50px 0;
+		clear: both;
+	}
+	.body-moncompte a{
+		margin: 50px;
+		font-size: 16px;
+		color: #817ce7;
+	}
+	.body-moncompte h2{
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 25px;
+	}
+	.modification-identifiants{
+		width: 30%;
+		float: left;
+		padding: 10px 1%;
+	}
+
+	.modification-infosgen, .modification-emplacement{
+		display: inline-block;
+		width: 40%;
+		vertical-align: top;
+		padding: 10px 1%;
+	}
+
+	.modification-submit{
+		width: 25%;
+		display: inline-block;
+		padding: 20px 1%;
+	} 
+
+	/*Concernant les pages ayant des get*/
+	.getpage{
+		padding: 15px;
+	}
+
+	/*Concernant la page search.php*/
+	.search-container{
+		padding: 10px 30px;
+	}
+	.searchresult{
+		width: calc(24% - 2px);
+		display: inline-block;
+		border-bottom: 0;
+	}
+	.searchresult-img{
+		width: 100%;
+	}
+	.searchresult-item{
+		width: 100%;
+	}
+
+	/*Concernant la page saveclient.php*/
+	.topbar-saveClient{
+		height: 250px;
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	/*Concernant la page panier.php*/
+	.topbar-panier{
+		width: 60%;
+		display: inline-block;
+	}
+	.sidebar-panier{
+		width: 38%;
+		display: inline-block;
+		border-top: 0;
+	}
+	.panier-titre-article, .panier-item-img{
+		width: 15%;
+	}
+	.panier-titre-quantite, .panier-item-quantite{
+		width: 30%;
+	}
+	.panier-titre-prixtot, .panier-item-prixtot{
+		width: 40%;
+	}
+	.panier-titre-supprimer,.panier-item-supprimer{
+		width: 10%;
+	}
+	.panier-item-prixtot{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.panier-item-quantite input, .panier-item-prixtot input{
+		font-size: 16px;
+	}
+	.panier-item-prixtot input{
+		font-weight: bold;
+	}
+	.panier-item-name{
+		color: #000;
+		font-weight: bold;
+		padding: 10px;
+		font-size: 16px;
+	}
+	.panier-infos{
+		border-top: 1px solid rgb(230,230,230);
+	}
+	.panier-infos h2{
+		border-top: 0;
+	}
+	.panier-infos-remboursement, .panier-infos-paiement, .panier-infos-services, .panier-infos-livraison{
+		width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	/*Concernant la page achat.php*/
+	.body-achat{
+		text-align: center;
+		padding: 50px 0;
+		padding-bottom: 100px;
+	}
+	.body-facture{
+		padding: 10px;
+	}
+	.facture{
+		width: 49%;
+	}
+	.topbar-achat{
+		padding: 0 10px;
+		font-size: 18px;
+	}
+}
+
+/*Pour les appareils avec plus de 950px*/
+@media only screen and (min-width: 950px){
+	.topbar-logo{
+		width: 192px;
+		height: 95px;
+		padding-top: 10px;
+		background-size: 100px;
+		background-position: 50px 10px;
+	}
+	.topbar-nav{
+		float: right;
+		width: calc(100% - 192px);
+		height: 95px;
+		padding: 30px 20px;
+		background: #1a2937;
+	}
+	.panier-topbar{
+		width: 5%;
+	}
+	.navigation{
+		width: calc(100% - 192px);
+		padding-left: 70px;
+		overflow: initial;
+	}
+	.navigation a{
+		padding: 7px 13px;
+	}
+	.main-adresse{
+		float: left;
+		width: 192px;
+		height: 50px;
+		padding: 5px 10px;
+		background: #1a2937;
+		color: white;
+		font-family: Times-new-roman;
+		line-height: 16px;
+		clear: none;
+	}
+	.spacebody{
+		background: white;
+		/*background: linear-gradient(to right, #1a2937, #1a2937 12%, rgb(230,230,230));*/
+		height: 30px;
+	}
+	.card-bodytopbar{
+		height: 200px;
+	}
+	.card-ident{
+		width: 300px;
+	    margin: 10px;
+	    margin-left: 5%;
+	}
+	.container-item{
+		width: calc(25% - 25px);
+		margin-left: 15px;
+	}
+	.container{
+		width: calc(100% - 300px - 10%);
+	    float: left;
+	    clear: none;
+	    padding: 0 10px;
+	    min-height: 600px;
+	    margin: 10px;
+	}
+	.container-magexpl{
+		float: left;
+		width: 300px;
+		padding: 0;
+		margin: 0;
+		clear: none;
+		position: absolute;
+		margin-top: 185px;
+		margin-left: 5%;
+		padding-left: 10px;
+		background: white;
+	}
+
+	/*Cocernant la page produit.php*/
+	.body-produit{
+		padding: 50px 5%;
+	}
+	.produit-container{
+		width: 30%;
+	}
+	.sidebar-produit{
+		width: 68%;
+	}
+	.sidebar-produit h2{
+		text-align: center;
+	}
+	.sidebar-produit img{
+		width: 24%;
+	}
+
+	/*Concernant la page occasion.php*/
+	.main-return{
+		height: 50px;
+		padding-left: 20px;
+		float: left;
+		width: calc(100% - 192px);
+	}
+	.occas-top{
+		width: 200px;
+		float: left;
+		border-bottom: 0;
+		padding: 10px 5px;
+		clear: both;
+	}
+	.occas-top-title{
+		font-size: 20px;
+		font-weight: bold;
+		color: rgba(0,0,0);
+		padding-bottom: 10px;
+	}
+	.sidebar-occas{
+		width: calc(100% - 220px);
+		border-left: 1px solid rgb(230,230,230);
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px; 
+	}
+	.occas-item{
+		width: 18%;
+		margin: 20px 3%;
+	}
+
+	/*Concernant la page mag.php*/
+	.mag-topbar{
+		width: 200px;
+	}
+	.mag-sidebar{
+		width: calc(100% - 220px);
+	}
+	.mag-item{
+		width: calc(23%);
+	}
+
+	/*Concernant la page maglist.php*/
+	.maglist-container{
+		width: calc(100% - 220px);
+	}
+	.maglist-topbar{
+		width: 200px;
+	}
+	.maglist-item{
+		width: 22%;
+	}
+
+
+	/*Concernant la page offres.php*/
+	.day-offre-top{
+		width: 200px;
+	}
+	.offre-container{
+		width: calc(100% - 220px);
+	}
+	.offre-item{
+		width: 22%;
+	}
+
+	.topbar-biens{
+		width: 30%;
+		padding: 50px;
+		padding-right: 0;
+	}
+	.sidebar-biens{
+		width: 68%;
+		padding: 50px;
+	}
+
+	/*Concernant la page listemagsins.php*/
+	.item-magsin{
+		width: calc(16.5% - 2px);
+	}
+	.topbar-magsin{
+		height: 250px;
+	}
+
+	/*Concernant la page commandform.php*/
+	.body-commandform{
+		width: 950px;
+	}
+
+	/*Concernant la page moncompte.php*/
+	.body-moncompte h2{
+		padding-bottom: 50px;
+	}
+	.modification-identifiants{
+		padding: 10px 5%;
+	}
+	.modification-infosgen, .modification-emplacement{
+		padding: 10px 5%;
+	}
+	.modification-submit{
+		padding: 20px 5%;
+	}
+	/*Concernant les getpages*/
+	.getpage{
+		padding: 20px;
+	}
+	/*Concernant la page search.php*/
+	.search-container{
+		padding: 10px 100px;
+	}
+	.searchresult{
+		width: calc(19% - 2px);
+	}
+
+	/*Concernant la page saveclient.php*/
+	.topbar-saveClient{
+		height: 300px;
+		font-size: 25px;
+		background-position: center;
+	}
+
+	/*Concernant la page panier.php*/
+	.topbar-panier{
+		width: 70%;
+	}
+	.sidebar-panier{
+		width: 28%;
+	}
+	.panier-titre-name, .panier-item-name{
+		display: inline-block;
+		width: 50%;
+	}
+	.panier-titre-article, .panier-item-img{
+		width: 5%;
+	}
+	.panier-titre-quantite, .panier-item-quantite{
+		width: 10%;
+	}
+	.panier-titre-prixtot, .panier-item-prixtot{
+		width: 25%;
+	}
+	.panier-titre-supprimer,.panier-item-supprimer{
+		width: 5%;
+		display: inline-block;
+	}
+	.panier-item-quantite input, .panier-item-prixtot input{
+		font-size: 20px;
+	}
+	.panier-item-name{
+		color: #000;
+		font-weight: bold;
+		padding: 10px;
+		font-size: 16px;
+	}
+	.panier-infos{
+		border-top: 0;
+	}
+	.panier-infos-remboursement, .panier-infos-paiement, .panier-infos-services, .panier-infos-livraison{
+		width: calc(25% - 4px);
+		border-right: 1px solid rgb(230,230,230);
+		padding: 10px;
+	}
+	.panier-infos-livraison{
+		border-right: 0;
+	}
+
+	/*Concernant la page achat.php*/
+	.topbar-achat{
+		padding: 0 100px;
+		margin: auto;
+		text-align: left;
+		font-size: 20px;
+
+	}
+	.body-facture{
+		text-align: center;
+	}
+	.facture{
+		width: 25%;
+		margin: 20px;
+	}
+
+	/*Concernant la page compteVendeur.php*/
+	.body-c_vendeur{
+		text-align: center;
+	}
+	.sidebar-c_vendeur, .topbar-c_vendeur{
+		width: 45%;
+		display: inline-block;
+		margin: 0 10px;
+		vertical-align: top;
+	}
+}
